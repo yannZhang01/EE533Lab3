@@ -1,0 +1,9 @@
+sch2verilog -intstyle ise -family aspartan2e   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family aspartan2e   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family aspartan2e   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family aspartan2e   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Lab3/again/detect7B.sch" detect7B.vf
+sch2verilog -intstyle ise -family virtex2p   -w "C:/Lab3/again/detect7B.sch" detect7B.vf

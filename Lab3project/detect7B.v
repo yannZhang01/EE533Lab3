@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : detect7B.vf
+// /___/   /\     Timestamp : 01/30/2026 21:12:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family aspartan2e -w C:/Lab3/again/detect7B.sch detect7B.vf
+//Design Name: detect7B
+//Device: aspartan2e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module detect7B(ce, 
+                clk, 
+                hwregA, 
+                match_en, 
+                mrst, 
+                pipe1, 
+                match);
+
+    input ce;
+    input clk;
+    input [63:0] hwregA;
+    input match_en;
+    input mrst;
+    input [71:0] pipe1;
+   output match;
+   
+   wire [71:0] pipe0;
+   wire XLXN_20;
+   wire XLXN_23;
+   wire [111:0] XLXN_25;
+   wire XLXN_31;
+   wire match_DUMMY;
+   
+   assign match = match_DUMMY;
+   reg9B XLXI_7 (.ce(ce), 
+                 .clk(clk), 
+                 .clr(XLXN_31), 
+                 .d(pipe1[71:0]), 
+                 .q(pipe0[71:0]));
+   AND3B1 XLXI_8 (.I0(match_DUMMY), 
+                  .I1(match_en), 
+                  .I2(XLXN_23), 
+                  .O(XLXN_20));
+   FDCE XLXI_9 (.C(clk), 
+                .CE(XLXN_20), 
+                .CLR(XLXN_31), 
+                .D(XLXN_20), 
+                .Q(match_DUMMY));
+   defparam XLXI_9.INIT = 1'b0;
+   FD XLXI_10 (.C(clk), 
+               .D(mrst), 
+               .Q(XLXN_31));
+   defparam XLXI_10.INIT = 1'b0;
+   busmerge XLXI_11 (.da(pipe0[47:0]), 
+                     .db(pipe1[63:0]), 
+                     .q(XLXN_25[111:0]));
+   wordmatch XLXI_12 (.datacomp(hwregA[55:0]), 
+                      .datain(XLXN_25[111:0]), 
+                      .wildcard(hwregA[62:56]), 
+                      .match(XLXN_23));
+endmodule

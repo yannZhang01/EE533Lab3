@@ -1,0 +1,15 @@
+select figure at 1425 421 6 -branches -sn=1
+select figure at 1423 420 6 -branches -sn=1
+select figure at 1425 421 6 -branches -all -sn=1
+select figure at 1384 826 6 -branches -sn=1
+select figure at 1383 825 6 -branches -sn=1
+select figure at 1384 826 6 -branches -sn=1
+select figure at 1384 826 6 -branches -all -sn=1
+select figure at 1593 2143 6 -branches -sn=1
+select figure at 1591 2141 6 -branches -sn=1
+select figure at 1423 2144 6 -branches -sn=1
+select figure at 1422 2143 6 -branches -sn=1
+select figure at 1459 2209 6 -branches -sn=1
+select figure at 1457 2207 6 -branches -sn=1
+select figure at 1472 2306 6 -branches -sn=1
+select figure at 1470 2304 6 -branches -sn=1

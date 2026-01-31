@@ -1,0 +1,11 @@
+# Output products list for <dualpoartmem9B>
+dualpoartmem9B.asy
+dualpoartmem9B.ngc
+dualpoartmem9B.sym
+dualpoartmem9B.v
+dualpoartmem9B.veo
+dualpoartmem9B.vhd
+dualpoartmem9B.vho
+dualpoartmem9B.xco
+dualpoartmem9B_flist.txt
+dualpoartmem9B_xmdf.tcl
